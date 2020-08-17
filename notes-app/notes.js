@@ -10,6 +10,7 @@ const addNote = (title, body) => {
     // const duplicateNotes = notes.filter((note) => note.title === title ) 
     const duplicateNote = notes.find((note) => note.title === title)
 
+
     if (!duplicateNote) {
         notes.push({
             title: title,
@@ -39,7 +40,7 @@ const removeNote = (title) => {
 
 const saveNotes = (notes) => {
     const dataJSON = JSON.stringify(notes)
-    fs.writeFileSync('notes.json', dataJSON)
+    fs.writeFileSync('notes.json', dataJsON)
 }
 
 const loadNotes = () => {
@@ -75,7 +76,6 @@ const listNotes = () => {
 
 
 module.exports = {
-    getNotes: getNotes,
     addNote: addNote,
     removeNote: removeNote,
     listNotes: listNotes,

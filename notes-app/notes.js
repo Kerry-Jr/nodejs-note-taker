@@ -24,6 +24,7 @@ const addNote = (title, body) => {
 }
 
 
+
 const removeNote = (title) => {
    const notes = loadNotes()
    const notesToKeep = notes.filter((note) => note.title !== title)

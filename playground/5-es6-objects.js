@@ -1,5 +1,5 @@
-const name = 'Andrew'
-const userAge = 27
+const name = 'Kerry'
+const userAge = 35
 
 const user = {
   name: name,
@@ -18,8 +18,11 @@ const product = {
   rating: 4.2
 }
 
-const transaction = (type, { label, stock }) => {
+const transaction = (type, { label = 'item', stock = 0 } = {} ) => {
   console.log(type, label, stock)
 }
 
+
 transaction('order', product)
+
+// transaction('order', product)

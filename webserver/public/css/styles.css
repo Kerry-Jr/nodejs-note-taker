@@ -39,3 +39,22 @@ header a {
 .main-content {
   flex-grow: 1;
 }
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  background: #888888;
+  color: white;
+  padding: 8px;
+}
+
+button:hover {
+  width: 10%;
+  background: #667777;
+  box-shadow: 1px 8px 5px 1px #888888;
+}
